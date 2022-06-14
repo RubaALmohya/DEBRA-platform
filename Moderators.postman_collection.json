@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "a646fce6-7c9c-4ca8-aa3a-1ab80297b195",
+		"name": "Moderators",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21319542"
+	},
+	"item": [
+		{
+			"name": "Instructions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/instructions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"instructions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"amal\",\r\n    \"password\":\"ll123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Setting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MTE3OTkwLCJpYXQiOjE2NTUxMTc2OTAsImp0aSI6IjNhZjJiZjE4NDgwMzQ2NjdhZTAyNTM0YjEyMTU3MThmIiwidXNlcl9pZCI6NH0.n2lhVUaM8IhQVKejera3WZZqZH_tw3qJBXlFKcqQ13w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Amal Ali\",\r\n    \"gender\" : 2,\r\n    \"account_type\" :2,\r\n    \"birthday\" : \"1999-12-12\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/setting",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List of Individual",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Experts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/experts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"experts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Setting",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Noura\",\r\n    \"gender\" : 2,\r\n    \"account_type\" :2,\r\n    \"birthday\" : \"1998-2-3\",\r\n    \"age\":25,\r\n    \"user\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "B",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/moderators/delete/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"moderators",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "b547a402-698f-449e-8ba5-36467fbe6867",
+		"name": "Experts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21319542"
+	},
+	"item": [
+		{
+			"name": "Add Expert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MTE2MzMwLCJpYXQiOjE2NTUxMTYwMzAsImp0aSI6ImRhY2FkNmU2OWI2MjRkOWY5ZGY3ZGI2ZGI3YThkYTk3IiwidXNlcl9pZCI6Mn0.qYirpiamiZDQ92J_iZkBVEITxq1uasSEBDnCIAEiuWA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"API \",\r\n    \"domain\":\"IT\",\r\n    \"Services\":\"- application \",\r\n    \"user\":2\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/add/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Expert",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MTE2MzMwLCJpYXQiOjE2NTUxMTYwMzAsImp0aSI6ImRhY2FkNmU2OWI2MjRkOWY5ZGY3ZGI2ZGI3YThkYTk3IiwidXNlcl9pZCI6Mn0.qYirpiamiZDQ92J_iZkBVEITxq1uasSEBDnCIAEiuWA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"API \",\r\n    \"domain\":\"proggraming\",\r\n    \"Services\":\"- application \"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/edit/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"edit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ُExpert add project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MjM4ODI1LCJpYXQiOjE2NTUyMzg1MjUsImp0aSI6IjhkMGZhOTFiZmI2YjQ5NmVhY2ZjZGI0OTcxNzc0OTZjIiwidXNlcl9pZCI6OX0.qBCR48qm3DLohQZV-2vilKjlH_7teOXjCHVPCj7JuiQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Dexkkkkkkkkhhhhbrah\",\r\n    \"description\":\"web site\",\r\n    \"field\":\"jobs\",\r\n    \"type\":2,\r\n    \"price\":500,\r\n    \"expert\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/add_auction/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"add_auction",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Start auction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"auction_id\":2,\r\n    \"price\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/start_auction/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"start_auction",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update auction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"auction_id\":2,\r\n    \"price\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/update_auction/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"update_auction",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
