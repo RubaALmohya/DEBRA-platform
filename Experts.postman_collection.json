@@ -85,19 +85,19 @@
 			"response": []
 		},
 		{
-			"name": "ُExpert add project",
+			"name": "Expert add project",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MjM4ODI1LCJpYXQiOjE2NTUyMzg1MjUsImp0aSI6IjhkMGZhOTFiZmI2YjQ5NmVhY2ZjZGI0OTcxNzc0OTZjIiwidXNlcl9pZCI6OX0.qBCR48qm3DLohQZV-2vilKjlH_7teOXjCHVPCj7JuiQ",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzM3MjM0LCJpYXQiOjE2NTUyNzcyMzQsImp0aSI6ImIyMWY2MTVhNjU3ODQ1MTRiOTgxYjYxN2FlMmFhMDAyIiwidXNlcl9pZCI6NH0.pi2wPb7-k_fE9cym2DXZD0Ux6PL7s-5Ihw-n0tQNKcI",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Dexkkkkkkkkhhhhbrah\",\r\n    \"description\":\"web site\",\r\n    \"field\":\"jobs\",\r\n    \"type\":2,\r\n    \"price\":500,\r\n    \"expert\":2\r\n}",
+					"raw": "{\r\n    \"name\":\"shopping website\",\r\n    \"description\":\"A fully equipped website for selling clothes for women and men with a modern design\",\r\n    \"field\":\"electronic trade\",\r\n    \"type\":2,\r\n    \"price\":2000,\r\n    \"expert\":1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -117,6 +117,87 @@
 					"path": [
 						"experts",
 						"add_auction",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Expert edit project",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzQ1MzQwLCJpYXQiOjE2NTUyODUzNDAsImp0aSI6ImI2MTM2ODFhNGNjYjQ5NTRiNjU3YzdkZjNlODYxY2VlIiwidXNlcl9pZCI6NH0.DJva0vNlToVu4WvVNci0wcieY7gf2za7L7MlSC3E7T8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Debrah\",\r\n    \"description\":\"web site\",\r\n    \"field\":\"jobs\",\r\n    \"type\":2,\r\n    \"price\":100,\r\n    \"expert\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/edit_auction/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"edit_auction",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show experts auction",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU1MzQ1OTA4LCJpYXQiOjE2NTUyODU5MDgsImp0aSI6IjU3NGMyZjMxOTk5YzQ3MTJiYTg4YTA5M2NlMWFkMDg3IiwidXNlcl9pZCI6NH0.QC5mIugeJyYdlIYiyIxRKeYsVMo0lTdCOC8F56WbX9M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/experts/show_expert_auction/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"experts",
+						"show_expert_auction",
 						""
 					]
 				}
